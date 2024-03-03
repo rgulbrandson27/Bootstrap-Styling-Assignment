@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- •	Create a new website using HTML and Bootstrap. The website must include the following:
+•	At least 2 pages.
+•	A Bootstrap navbar, table, and form.
+•	Bootstrap grid used throughout to format elements
+•	Elements should stack vertically when the window is small -->
+
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-primary-subtle border border-primary"
+    >
+      <div class="container-md">
+        <a class="navbar-brand" href="#home">
+          <span class="fw-bold text-secondary ms-3">SSA Work Incentives</span>
+        </a>
+
+        <!--toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="#main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navbar Links-->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          justify-content-end
+          align-center
+          id="main-nav"
+        >
+          <ul class="navbar-nav me-5">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./TitleII.html">Title II</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./SSI.html">SSI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container p-5">
+      <ul class="list-group mt-4 mx-5">
+        <li
+          class="list-group-item list-group-item-secondary text-center text-primary fw-bold fs-2"
+        >
+          WELCOME
+        </li>
+
+        <li class="list-group-item fs-6 bg-primary-subtle">
+          <h3 class="text-primary mb-2 p-2">Week 9 Front End Assignment:</h3>
+          <h4 class="text-primary mb-2 p-2">
+            Objective: Create a multi-page application using only Bootstrap for
+            styling.
+          </h4>
+
+          <h5 class="p-2">
+            This is a simplified prototype for a future project that will serve
+            as a tool for SSA certified Work Incentives Counselors (CWICs) to
+            use when providing services to clients.
+          </h5>
+          <h5 class="p-2">
+            This tool will provide user-friendly and streamlined document
+            production, yet still allow for client individualization.
+          </h5>
+        </li>
+      </ul>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

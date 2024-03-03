@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body></body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-sm navbar-light bs-primary-bg-subtle">
+    <div class="container-md">
+      <a class="navbar-brand" href="#home">
+        <span class="fw-bold text-secondary ms-3"
+          >SSA Work Incentives</span
+        >
+      </a>
+
+      <!--toggle button for mobile nav -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main-nav"
+        aria-controls="#main-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--navbar Links-->
+      <div
+        class="collapse navbar-collapse justify-content-end align-center"
+        justify-content-end
+        align-center
+        id="main-nav"
+      >
+        <ul class="navbar-nav me-5">
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./TitleII.html">Title II</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="./SSI.html">SSI</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="container bg-secondary mt-4 p-3">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+    <div class="card bg-danger-subtle text-center">
+      <div class="card-body">
+      <h5 class="card-title card-header">SSI Calculation Worksheet</h5>
+      
+      <div class="row my-2 pt-4 pb-1">
+          <label for="income" class="col-sm-7">Enter Monthly Gross Income</label>
+          <div class="col-5 d-flex align-items-center">
+          <h5 class="inline-block m-0">$</h5>
+          <input type="number" class="form-control w-75 pe-0 h-100 text-end fs-6"  placeholder="$0,000.00" id="income">
+          <button id="enter-button" type="button" class="btn btn-secondary btn-sm">Enter</button>
+      </div>
+    
+      <div class="row my-2">
+        <div class="col-7">Subtract $85</div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row my-2">
+        <div class="col-7">Divide By 2</div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row my-2">
+        <div class="col-7 m-0">= Countable Earnings </div>
+        <div class="col-5 px-4 h-25 mx-0">
+          <div class="container bg-secondary-subtle border border-secondary m-0 h-100 w-100 p-0 text-center" id="countable-income"></div>
+      </div>
+    
+      <div class="row 4 bg-secondary my-2 me-0 ms-0 p-0 align-center" style="height: 4px"></div>
+
+      <div class="row my-2">
+        <div class="col-7 text-center ms-4">2024 Maximumm SSI Benefit </div>
+        <div class="col-3 class text-end ms-3">$943.00</div>
+      </div>
+        <div class="col-7 text-center"> - countable earnings</div>
+        <div class="col-3 class text-end id=subtract-countable-income"></div>
+      </div>
+      <!-- <div class="row my-2">
+        <div class="col-7 text-center">Adjusted SSI Benefit Amount</div>
+        <div class="col-3 class text-end" ><p id="adjusted"> </p></div>
+      </div> -->
+      
+      <div class="card-footer bg-success-subtle">
+      <div class="row my-3">
+        <div class="col-sm-7 text-center">Adjusted SSI Benefit Amount</div>
+        <div class="col-sm-3 class text-end align-text-center" ><p id="adjusted"> </p></div>
+      </div>
+      </div>
+
+
+
+
+    </div>
+    </div>
+  </div>
+
+
+            
+                
+            
+
+        
+
+<!-- 
+        <div class="row">
+            <div class="col-sm">
+            <div class="form-group">
+                <label for="new-task">Task</label>
+                <input type="textarea" class="form-control" id="new-task" placeholder="Task">
+            </div>
+        </div>
+        <button id="add" class="btn btn-outline-primary">Create</button>
+     -->
+    
+   
+</div>  
+
+<script src="SSI.js"></script>
+
+
+ </body>
+
+
+
+
+</html>
