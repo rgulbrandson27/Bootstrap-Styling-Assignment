@@ -17,10 +17,4 @@ enterButton.addEventListener("click", (e) => {
   console.log(adjustedSSIBox);
 
   adjustedSSIBox.innerHTML = "$" + adjustedSSI.toFixed(2);
-
-  // console.log(adjustedSSI);
-
-  // subtractCountableIncome.innerHTML =
-  //   "- " + " $" + countableIncomeValue.toFixed(2);
-  // console.log(subtractCountableIncome);
 });
